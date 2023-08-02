@@ -50,6 +50,6 @@ http.createServer(function (req, res) {
         res.end();
     }
 
-}).listen(8081); // Server object listens on port 8081
+}).listen(8080); // Server object listens on port 8081
 
 console.log('Node.js web server at port 8081 is running..')
