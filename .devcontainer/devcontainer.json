@@ -1,18 +1,17 @@
 {
     "name": "codetanks-javascript-devcontainer",
-    // "image": "ghcr.io/code-tanks/code-tanks-javascript-devcontainer:latest",
-    "build": {
-        // "context": ".",
-        "dockerfile": "Dockerfile"
-    },
+    "image": "ghcr.io/code-tanks/code-tanks-javascript-devcontainer:latest",
+    // "build": {
+    //     // "context": ".",
+    //     "dockerfile": "Dockerfile"
+    // },
     "customizations": {
         "vscode": {
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "bash"
             },
             "extensions": [
-                "ms-vscode-remote.remote-containers",
-                // "Dart-Code.dart-code"
+                "ms-vscode-remote.remote-containers"
             ]
         }
     },
