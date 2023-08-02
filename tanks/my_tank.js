@@ -1,4 +1,4 @@
-const { BaseTank } = require('../lib/api.js')
+const { BaseTank, Command } = require('../lib/api.js')
 
 class Tank extends BaseTank {
     constructor() {
