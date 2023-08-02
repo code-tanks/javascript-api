@@ -1,0 +1,26 @@
+{
+    "name": "codetanks-javascript-devcontainer",
+    "image": "ghcr.io/code-tanks/code-tanks-javascript-devcontainer:latest",
+    // "build": {
+    //     // "context": ".",
+    //     "dockerfile": "Dockerfile"
+    // },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "ms-vscode-remote.remote-containers",
+                // "Dart-Code.dart-code"
+            ]
+        }
+    },
+    "runArgs": [
+        "--network=host"
+    ],
+    "remoteUser": "developer",
+    "postCreateCommand": "git config --global --add safe.directory /home/developer/workspace && dart pub get",
+    "workspaceMount": "source=${localWorkspaceFolder}/,target=/home/developer/workspace,type=bind,consistency=delegated",
+    "workspaceFolder": "/home/developer/workspace"
+}
