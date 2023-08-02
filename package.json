@@ -1,0 +1,23 @@
+{
+  "name": "javascript-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-tanks/javascript-api.git"
+  },
+  "author": "derrick56007@github.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-tanks/javascript-api/issues"
+  },
+  "homepage": "https://github.com/code-tanks/javascript-api#readme"
+}
