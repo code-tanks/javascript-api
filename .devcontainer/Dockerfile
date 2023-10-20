@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:21
 
 RUN useradd -ms /bin/bash developer
 USER developer
